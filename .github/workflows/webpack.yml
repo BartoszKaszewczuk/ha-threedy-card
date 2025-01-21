@@ -26,3 +26,8 @@ jobs:
       run: |
         npm install
         npx webpack
+
+    - name: Publish Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: "threedy-card.js"
